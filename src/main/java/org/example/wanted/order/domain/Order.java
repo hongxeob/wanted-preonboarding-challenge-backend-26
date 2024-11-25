@@ -44,4 +44,8 @@ public class Order extends BaseTimeEntity {
     private static String generateOrderNumber() {
         return "ORD-" + System.currentTimeMillis();
     }
+
+    public void updateStatus(OrderStatus requestStatus) {
+        this.status = requestStatus;
+    }
 }
