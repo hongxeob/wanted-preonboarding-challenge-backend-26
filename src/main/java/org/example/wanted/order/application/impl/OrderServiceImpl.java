@@ -1,7 +1,9 @@
-package org.example.wanted.order.application;
+package org.example.wanted.order.application.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.example.wanted.exception.EntityNotFoundException;
+import org.example.wanted.order.application.OrderService;
+import org.example.wanted.order.application.dto.OrderCreateRequest;
 import org.example.wanted.order.application.dto.OrderResultResponse;
 import org.example.wanted.order.domain.Order;
 import org.example.wanted.order.domain.OrderRepository;

@@ -1,4 +1,4 @@
-package org.example.wanted.order.application;
+package org.example.wanted.order.application.dto;
 
 import org.example.wanted.order.domain.Order;
 import org.example.wanted.user.domain.User;
