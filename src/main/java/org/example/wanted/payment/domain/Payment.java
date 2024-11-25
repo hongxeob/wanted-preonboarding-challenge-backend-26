@@ -40,11 +40,15 @@ public class Payment extends BaseTimeEntity {
         this.status = PaymentStatus.PENDING;
     }
 
-    public void paid() {
+    public void pay() {
         this.paidAt = LocalDateTime.now();
+        this.status = PaymentStatus.COMPLETED;
     }
 
     public void cancel(String reason) {
+        /**
+         * 이미 취소상태인지 검증할 것인가?
+         * */
         this.cancelReason = reason;
         this.cancelledAt = LocalDateTime.now();
         this.status = PaymentStatus.CANCELLED;
